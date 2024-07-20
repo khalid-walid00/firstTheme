@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden;">
+    <!-- header -->
+    <div class="flex justify-center bg-black gap-4 text-white py-3">
+        شحن مجاني على المنتجات اكثر من 500 جنيه      
+          <img class="w-6 h-6" src="/assets/icons/motor.png">
+    </div>
+    <div class="w-full flex justify-center bg-wheate" dir="rtl">
+        <div class="w-9/12 flex justify-between items-center ">
+            <!-- icon -->
+            <img class="w-16 h-16" src="/assets/icons/header1.png">
+            <!-- icon -->
+            <!-- search -->
+            <div class="flex w-64 px-2 h-10 items-center bg-white rounded-lg">
+                <input type="text" class="flex-1 outline-none" placeholder="ابحث عما تريد">
+                <img class="w-4 h-4" src="/assets/icons/search.png">
+            </div>
+            <!-- search -->
+
+            <!-- links -->
+            <div class="flex gap-4 justify-between">
+                <a class=" font-semibold text-base ">الرئيسية</a>
+                <a class=" font-semibold text-base text-gray-500">المنتجات</a>
+                <a class=" font-semibold text-base text-gray-500">قائمة منسدلة</a>
+                <a class=" font-semibold text-base text-gray-500">صفحة</a>
+            </div>
+            <!-- links -->
+            <!-- conection us -->
+            <div class="flex justify-between items-center gap-8">
+                <a class=" bg-white px-2 py-1 rounded-lg border-gray-200 border">تواصل معنا</a>
+                <img class="w-8 h-8" src="/assets/icons/basket.header.png">
+
+            </div>
+            <!-- conection us -->
+
+        </div>
+    </div>
+    <!-- header -->
+
+    <div class=" flex justify-center" dir="rtl">
+        <div class=" w-9/12">
+
+            <!-- choosen product -->
+            <div class="flex mt-14 gap-4  justify-between">
+                <div class="w-5/12 relative">
+                    <div class="product-img">
+                        <img class=" object-cover w-full h-full rounded-2xl" src="/assets/imgs/product.png">
+                    </div>
+                    <div class="product-more-img bg-white rounded-xl left-40 top-1/4 absolute">
+                        <img class="" src="/assets/imgs/moreProduct.png">
+                        <img class="" src="/assets/imgs/moreProduct.png">
+                        <img class="" src="/assets/imgs/moreProduct.png">
+                        <img class="" src="/assets/imgs/moreProduct.png">
+                    </div>
+                </div>
+
+                <div class="w-7/12">
+                    <!-- about price -->
+                    <div class="flex w-full">
+                        <div class="w-1/2">
+                            <div class="flex gap-2">
+                                <span class="text-brown-holder text-lg">ملابس رجالي</span>
+                                <span
+                                    class="bg-whiteYellow py-0 flex items-center px-2 text-sm font-semibold rounded-full">12
+                                    Left!</span>
+                            </div>
+                            <div class=" font-semibold text-2xl my-1">سترة رجالي بكم طويل</div>
+                            <div class="font-semibold text-2xl">450 ج.م</div>
+                        </div>
+
+                        <div class="w-1/2 flex justify-end">
+                            <button class="btn-makeorder w-8/12 h-10 flex justify-center gap-2 items-center mt-2">
+                                <img class="w-4 h-4" src="/assets/icons/cart.png">
+                                شراء الآن
+                            </button>
+                        </div>
+                    </div>
+                    <!-- about price -->
+
+                    <!-- about product -->
+                    <div class="about-product my-5 flex justify-between">
+                        <!-- size -->
+                        <div class="w-6/12">
+                            <div class=" text-lg font-semibold">الخامة</div>
+                            <div class="text-brown-holder text-lg">قطن عالى الجودة (100% قطن)</div>
+                            <!-- choose size -->
+                            <div class="mt-4">
+                                <div class=" text-lg font-semibold">المقاسات</div>
+                                <div class=" flex gap-2">
+                                    <span
+                                        class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">S</span>
+                                    <span
+                                        class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">M</span>
+                                    <span
+                                        class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">L</span>
+                                    <span
+                                        class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">XL</span>
+                                    <span
+                                        class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">XXL</span>
+                                </div>
+                            </div>
+                            <!-- choose size -->
+
+                            <div class="flex flex-col mt-2">
+                                <div class="my-1 text-lg font-semibold">الكمية</div>
+                                <select class=" outline-none border-gray border rounded-lg py-2 w-12">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- size -->
+
+                        <!-- color -->
+                        <div class="w-5/12">
+                            <div class=" text-lg font-semibold">التلبيس</div>
+                            <div class="text-brown-holder text-lg">Classic Fit</div>
+                            <div class="mt-4">
+                                <!-- choose color -->
+                                <div class="flex flex-col">
+                                    <div>الألوان</div>
+                                    <span
+                                        class="border w-24 mt-2 p-1 h-10 border-gray items-center rounded-full flex gap-1">
+                                        <span class=" w-6 h-6 bg-mediumSpringBud rounded-full"></span>
+                                        <span class=" w-6 h-6 bg-desertSand  rounded-full"></span>
+                                        <span class=" w-6 h-6 bg-black rounded-full"></span>
+                                    </span>
+
+                                </div>
+                                <!-- choose color -->
+                            </div>
+                        </div>
+                        <!-- color -->
+
+                    </div>
+                    <!-- about product -->
+
+                    <!-- offer -->
+                    <div>
+                        <div class=" text-lg font-semibold text-center my-4">عروض التوفير</div>
+                        <!-- first offer -->
+                        <div class="offer h-48">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-2 ">
+                                    <input type="radio" class="custom-radio">
+                                    <span class=" text-lg font-semibold">اشتري قطعة بسعر 480 ج.م</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                    <span class="text-brown-holder line-through">50 ج.م</span>
+                                </div>
+                            </div>
+                            <div class=" text-lg text-brown-holder my-3  font-semibold">اختر اللون والمقاس</div>
+                            <div class="flex justify-between">
+                                <!-- choose size/color -->
+                                <div class=" flex justify-between w-full gap-4">
+                                    <!-- size -->
+                                    <div class="w-6/12">
+                                        <div class=" text-lg text-brown-holder font-semibold">المقاسات</div>
+                                        <div class=" flex gap-2">
+                                            <span
+                                                class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">S</span>
+                                            <span
+                                                class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">M</span>
+                                            <span
+                                                class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">L</span>
+                                            <span
+                                                class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">XL</span>
+                                            <span
+                                                class="bg-whiteGray w-12 h-10 flex justify-center items-center rounded-md border border-gray">XXL</span>
+                                        </div>
+                                    </div>
+                                    <!-- size -->
+                                    <!-- color -->
+                                    <div class=" w-6/12">
+                                        <div class=" flex flex-col">
+                                            <div>الألوان</div>
+                                            <span
+                                                class="border w-24 mt-2 p-1 h-10 border-gray items-center rounded-full flex gap-1">
+                                                <span class=" w-6 h-6 bg-mediumSpringBud rounded-full"></span>
+                                                <span class=" w-6 h-6 bg-desertSand  rounded-full"></span>
+                                                <span class=" w-6 h-6 bg-black rounded-full"></span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- choose size/color -->
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- first offer -->
+
+                        <!-- second offer -->
+                        <div class="mt-5">
+                            <div class=" border border-gray rounded-lg">
+                                <div class="w-1/3 rounded-xl">
+                                    <div class=" btn-offers w-10/12">سعر القطعة 450 ج.م</div>
+                                </div>
+
+                                <!-- offer option -->
+                                <div class="p-4">
+                                    <div class="flex justify-between">
+                                        <div class="flex items-center gap-2 ">
+                                            <input type="radio" class="custom-radio">
+                                            <span class=" text-lg font-semibold">اشتري 2 بسعر 900 ج.م بدلا من 960
+                                                ج.م</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                            <span class="text-brown-holder line-through">50 ج.م</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- offer option -->
+
+                            </div>
+                        </div>
+                        <!-- second offer -->
+
+                        <!-- third offer -->
+                        <div class="mt-5">
+                            <div class=" border border-gray rounded-lg">
+                                <div class="w-1/3 rounded-xl">
+                                    <div class=" btn-offers w-10/12">سعر القطعة 450 ج.م</div>
+                                </div>
+
+                                <!-- offer option -->
+                                <div class="p-4">
+                                    <div class="flex justify-between">
+                                        <div class="flex items-center gap-2 ">
+                                            <input type="radio" class="custom-radio">
+                                            <span class=" text-lg font-semibold">اشتري 2 بسعر 900 ج.م بدلا من 960
+                                                ج.م</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                            <span class="text-brown-holder line-through">50 ج.م</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- offer option -->
+
+                            </div>
+                        </div>
+                        <!-- third offer -->
+                    </div>
+                    <!-- offer -->
+
+                    <!-- dlivery details -->
+                    <div class="mt-5 list-brown-holder-marker ">
+                        <div class=" border border-gray   rounded-lg p-4 ">
+                            <div class=" text-xl font-semibold">معلومات الشحن</div>
+                            <div class=" mt-4 mx-1">
+                                <ul class=" list-disc list-inside">
+                                    <li><span class=" text-brown-holder">شحن عادي :</span><span class=" font-semibold">
+                                            3-5 ايام عمل</span></li>
+                                    <li><span class=" text-brown-holder">شحن عادي :</span><span class=" font-semibold">
+                                            3-5 ايام عمل</span></li>
+                                    <li><span class=" text-brown-holder">شحن عادي :</span><span class=" font-semibold">
+                                            3-5 ايام عمل</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dlivery details -->
+
+                    <!-- features details -->
+                    <div class="mt-5 list-brown-holder-marker ">
+                        <div class=" border border-gray rounded-lg p-4 ">
+                            <div class=" text-xl font-semibold">معلومات الشحن</div>
+                            <div class=" mt-4 mx-1">
+                                <ul class=" list-disc list-inside">
+                                    <li><span class=" text-brown-holder">تفاصيل ممزقة لمظهر جذاب:</span><span
+                                            class=" font-semibold"></span></li>
+                                    <li><span class=" text-brown-holder"> أشرطة على الخصر الخلفي لتخصيص الأسلوب
+                                            :</span><span class=" font-semibold"></span></li>
+                                    <li><span class=" text-brown-holder"> اكمام طويلة لدفئ كامل :</span><span
+                                            class=" font-semibold"></span></li>
+                                    <li><span class=" text-brown-holder">أساور قابلة للتعديل بأزرار لملاءمة
+                                            شخصية:</span><span class=" font-semibold"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- features details -->
+
+                </div>
+
+            </div>
+            <!-- choosen product -->
+
+            <!-- more products -->
+            <div class="w-full">
+                <div class="flex w-full  mt-20">
+
+                    <div class="">
+                        <div class=" text-xl font-semibold">منتجات مشابهة</div>
+                        <div class="text-brown-holder">تسوق احدث المنتجات المميزة المضافة جديد</div>
+                    </div>
+
+
+                    <div class="flex  gap-2">
+                        <a class="border-gold  border p-2 rounded-lg h-max flex items-center">
+                            <span class="text-gold">عرض الكل</span>
+                            <img src="/assets/icons/arrow.png" class="  w-2 h-3 mx-1">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-6 mt-5">
+                    <div class=" border border-gray rounded-md shadow-md">
+                        <img src="/assets/imgs/prduct.jacket.png">
+                        <div class="p-4">
+                            <div class=" text-gold text-sm">اطقم</div>
+                            <div class=" font-semibold text-base">طقم كامل بنطلون وتيشرت مع بوت</div>
+                            <div class="flex w-full mt-4 items-center">
+                                <div class=" w-5/12">
+                                    <!-- choose color -->
+                                    <div class="flex flex-col">
+                                        <div>الألوان</div>
+                                        <span
+                                            class="border w-24 mt-2 p-1 h-10 border-gray items-center rounded-full flex gap-1">
+                                            <span class=" w-6 h-6 bg-mediumSpringBud rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-desertSand  rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-black rounded-full"></span>
+                                        </span>
+
+                                    </div>
+                                    <!-- choose color -->
+                                </div>
+                                <span class="self-end pb-3">M:3XL</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                <span class="text-brown-holder line-through">50 ج.م</span>
+                            </div>
+                            <div class="mt-2 flex justify-center w-full">
+                                <!-- buy now -->
+                                <button class="btn-buyNow py-3 flex justify-center gap-2 items-center mt-2">
+                                    <img class="w-4 h-4" src="/assets/icons/cart.png">
+                                    شراء الآن
+                                </button>
+                            </div>
+                            <!-- buy now -->
+
+                        </div>
+                    </div>
+                    <div class=" border border-gray rounded-md shadow-md">
+                        <img src="/assets/imgs/prduct.jacket.png">
+                        <div class="p-4">
+                            <div class=" text-gold text-sm">اطقم</div>
+                            <div class=" font-semibold text-base">طقم كامل بنطلون وتيشرت مع بوت</div>
+                            <div class="flex w-full mt-4 items-center">
+                                <div class=" w-5/12">
+                                    <!-- choose color -->
+                                    <div class="flex flex-col">
+                                        <div>الألوان</div>
+                                        <span
+                                            class="border w-24 mt-2 p-1 h-10 border-gray items-center rounded-full flex gap-1">
+                                            <span class=" w-6 h-6 bg-mediumSpringBud rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-desertSand  rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-black rounded-full"></span>
+                                        </span>
+
+                                    </div>
+                                    <!-- choose color -->
+                                </div>
+                                <span class="self-end pb-3">M:3XL</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                <span class="text-brown-holder line-through">50 ج.م</span>
+                            </div>
+                            <div class="mt-2 flex justify-center w-full">
+                                <!-- buy now -->
+                                <button class="btn-buyNow py-3 flex justify-center gap-2 items-center mt-2">
+                                    <img class="w-4 h-4" src="/assets/icons/cart.png">
+                                    شراء الآن
+                                </button>
+                            </div>
+                            <!-- buy now -->
+
+                        </div>
+                    </div>
+                    <div class=" border border-gray rounded-md shadow-md">
+                        <img src="/assets/imgs/prduct.jacket.png">
+                        <div class="p-4">
+                            <div class=" text-gold text-sm">اطقم</div>
+                            <div class=" font-semibold text-base">طقم كامل بنطلون وتيشرت مع بوت</div>
+                            <div class="flex w-full mt-4 items-center">
+                                <div class=" w-5/12">
+                                    <!-- choose color -->
+                                    <div class="flex flex-col">
+                                        <div>الألوان</div>
+                                        <span
+                                            class="border w-24 mt-2 p-1 h-10 border-gray items-center rounded-full flex gap-1">
+                                            <span class=" w-6 h-6 bg-mediumSpringBud rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-desertSand  rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-black rounded-full"></span>
+                                        </span>
+
+                                    </div>
+                                    <!-- choose color -->
+                                </div>
+                                <span class="self-end pb-3">M:3XL</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                <span class="text-brown-holder line-through">50 ج.م</span>
+                            </div>
+                            <div class="mt-2 flex justify-center w-full">
+                                <!-- buy now -->
+                                <button class="btn-buyNow py-3 flex justify-center gap-2 items-center mt-2">
+                                    <img class="w-4 h-4" src="/assets/icons/cart.png">
+                                    شراء الآن
+                                </button>
+                            </div>
+                            <!-- buy now -->
+
+                        </div>
+                    </div>
+                    <div class=" border border-gray rounded-md shadow-md">
+                        <img src="/assets/imgs/prduct.jacket.png">
+                        <div class="p-4">
+                            <div class=" text-gold text-sm">اطقم</div>
+                            <div class=" font-semibold text-base">طقم كامل بنطلون وتيشرت مع بوت</div>
+                            <div class="flex w-full mt-4 items-center">
+                                <div class=" w-5/12">
+                                    <!-- choose color -->
+                                    <div class="flex flex-col">
+                                        <div>الألوان</div>
+                                        <span
+                                            class="border w-24 mt-2 p-1 h-10 border-gray items-center rounded-full flex gap-1">
+                                            <span class=" w-6 h-6 bg-mediumSpringBud rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-desertSand  rounded-full"></span>
+                                            <span class=" w-6 h-6 bg-black rounded-full"></span>
+                                        </span>
+
+                                    </div>
+                                    <!-- choose color -->
+                                </div>
+                                <span class="self-end pb-3">M:3XL</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xl font-semibold text-red-500">480.00 ج.م</span>
+                                <span class="text-brown-holder line-through">50 ج.م</span>
+                            </div>
+                            <div class="mt-2 flex justify-center w-full">
+                                <!-- buy now -->
+                                <button class="btn-buyNow py-3 flex justify-center gap-2 items-center mt-2">
+                                    <img class="w-4 h-4" src="/assets/icons/cart.png">
+                                    شراء الآن
+                                </button>
+                            </div>
+                            <!-- buy now -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- more products -->
+
+            <!-- qestions -->
+            <div class="mt-20 w-full">
+                <div>
+                    <div class=" text-2xl font-bold">الاسئلة الاكثر شيوعا</div>
+                    <div class="text-brown-holder">تسوق احدث المنتجات المميزة المضافة جديد</div>
+                </div>
+                <div class=" flex justify-between mt-8 gap-10">
+                    <div class="w-6/12 rounded-lg custom-shadow bg-whiteYellow1">
+                        <div class="flex  justify-around items-center  ">
+                            <div class=" text-2xl font-bold p-6 ">كم الوقت الذي تأخده عملية الشحن</div>
+                            <img class="w-5 h-5 text-gold" src="/assets/icons/arrowDown.png">
+                        </div>
+                        <div class=" p-4">عادةً ما تستغرق عملية الشحن من 3 إلى 5 أيام عمل داخل الدولة. قد تختلف مدة
+                            الشحن حسب موقعك الجغرافي وخيارات الشحن المتاحة. نحن نسعى جاهدين لتسليم طلباتكم في أسرع وقت
+                            ممكن، ونوفر معلومات التتبع لتتبع الشحنة حتى وصولها.</div>
+                    </div>
+
+                    <div
+                        class="w-6/12 h-max flex rounded-lg custom-shadow justify-around items-center bg-whiteYellow1 ">
+                        <div class=" text-2xl font-bold p-6 ">كم الوقت الذي تأخده عملية الشحن</div>
+                        <img class="w-5 h-5 text-gold" src="/assets/icons/arrowDown.png">
+                    </div>
+
+                </div>
+            </div>
+            <!-- qestions -->
+
+            <!-- about -->
+             
+            <div class="mt-20 w-w-full">
+                <div class="flex justify-around border border-gray py-8">
+                    <div class="flex items-center  border-gray p-4 gap-2">
+                        <img class="w-10 h-10" src="/assets/icons/car.png">
+                        <div>
+                            <div class=" font-bold">منتجات مضمونه</div>
+                            <div class="text-brown-holder mt-2">منتجات بخامات قطن 100%</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center border-r border-gray p-5 gap-2">
+                        <img class="w-10 h-10" src="/assets/icons/recikel.png">
+                        <div>
+                            <div class=" font-bold">منتجات مضمونه</div>
+                            <div class="text-brown-holder mt-2">منتجات بخامات قطن 100%</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center border-r border-gray p-5 gap-2">
+                        <img class="w-10 h-10" src="/assets/icons/files.png">
+                        <div>
+                            <div class=" font-bold">منتجات مضمونه</div>
+                            <div class="text-brown-holder mt-2">منتجات بخامات قطن 100%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- about -->
+            <!-- opinions -->
+            <div class=" mt-20 w-w-full">
+                <div>
+                    <div class=" text-2xl font-bold">رأي العملاء</div>
+                    <div class="text-brown-holder">بعض آراء المستخدمين والعملاء الخاصين بنا</div>
+                </div>
+
+                <div class=" h-96 relative mt-5">
+
+                    <div
+                        class="swiper swipperOpinion swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl rounded-md">
+                        <div class="swiper-wrapper"
+                            style="transform: translate3d(477px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="0" style="width: 472px; margin-left: 5px;">
+                               <div class=" grid grid-cols-4 gap-6">
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD400"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="0" style="width: 472px; margin-left: 5px;">
+                               <div class=" grid grid-cols-4 gap-6">
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                                <div class=" border border-gray rounded-md p-4">
+                                    <div class=" font-semibold mb-2">محمد على</div>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d1d5db"
+                                            aria-hidden="true" class="text-gray-300 h-4 w-4 flex-shrink-0">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class=" text-brown-holder mt-2">تجربتي مع هذا المتجر كانت رائعة. الملابس ذات جودة عالية والأسعار مناسبة. أحببت حقًا مجموعة الملابس الكاجوال والرسمي. خدمة العملاء أيضًا كانت ممتازة، وسرعة الشحن فاقت توقعاتي. سأكون عميلًا دائمًا بالتأكيد! </div>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- <div
+                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                            <span
+                                class="swiper-pagination-bullet transition-all duration-300 ease-in-out !bg-black swiper-pagination-bullet-active !w-6 !opacity-100 !rounded-full"></span>
+                            <span
+                                class="swiper-pagination-bullet transition-all duration-300 ease-in-out !bg-black"></span>
+                            <span
+                                class="swiper-pagination-bullet transition-all duration-300 ease-in-out !bg-black"></span>
+                        </div> -->
+                        <!-- أزرار التحكم -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+
+                </div>
+
+            </div>
+            <!-- opinions -->
+
+
+            <!-- footer -->
+             <div class="w-full">
+                <div class="flex justify-between ">
+                     <div class=" w-1/5">
+                        <div class="text-lg font-semibold mb-3">عن متجرنا</div>
+                        <div class="text-brown-holder">في متجرنا، نؤمن بأن الأناقة تبدأ من الجودة. نقدم مجموعة متنوعة من الملابس التي تناسب جميع الأذواق والمناسبات، مستخدمين أفضل الخامات لضمان الراحة والأناقة. نسعى لتوفير تجربة تسوق مميزة عبر الإنترنت بخدمة عملاء ممتازة وشحن سريع. شكراً لاختياركم متجرنا، ونتطلع دائمًا لتقديم الأفضل</div>
+                     </div>
+                     <!--  -->
+                     <div class=" flex flex-col gap-3">
+                        <div class="text-lg font-semibold mb-1">عن متجرنا</div>
+                        <a class=" text-brown-holder">حسابى</a>
+                        <a class=" text-gold">طلباتى</a>
+                        <a class=" text-brown-holder">سلة المشتريات</a>
+                        <a class=" text-brown-holder">المفضلة</a>
+                     </div>
+                     <!--  -->
+                     <div class=" flex flex-col gap-3">
+                        <div class="text-lg font-semibold mb-1">الصفحات</div>
+                        <a class=" text-brown-holder">من نحن</a>
+                        <a class=" text-gold">ساسية الخصوصية</a>
+                        <a class=" text-brown-holder">الشروط والاحكام</a>
+                        <a class=" text-brown-holder">الدعم الفنى</a>
+                     </div>
+                     <!--  -->
+                     <div class=" flex flex-col gap-3">
+                        <div class="text-lg font-semibold mb-1">تواصل معنا</div>
+                        <a class=" text-brown-holder">
+                            <div>واتساب :</div>
+                            <div>+20115045060</div>
+                        </a>
+                        <a class=" text-brown-holder">
+                            <div>موبايل :</div>
+                            <div>+2001114445551</div>
+                        </a>
+                        <a class=" text-brown-holder">
+                            <div>البريد الآلكتروني :</div>
+                            <div>+Majarah@gmail.com</div>
+                        </a>
+                       
+                     </div>
+                     <!--  -->
+                     <div class=" flex flex-col gap-3">
+                        <div class="text-lg font-semibold mb-1">تابعنا على</div>
+                         <div class=" flex gap-1">
+                            <img class="w-8 h-8" src="/assets/icons/facebook.png">
+                            <img class="w-8 h-8" src="/assets/icons/twitter.png">
+                            <img class="w-8 h-8" src="/assets/icons/insta.png">
+                            <img class="w-8 h-8" src="/assets/icons/snap.png">
+                         </div>
+                     </div>
+                     <!--  -->
+                </div>
+                
+             </div>
+            <!-- footer -->
+
+
+
+        </div>
+        
+    </div>
+    <div class="flex justify-center bg-black gap-4 text-brown-holder py-3">
+        جميع الحقوق محفوظة  2024
+        <img class="w-6 h-6" src="/assets/icons/CopyRight.png">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swipperOpinions.js"></script>
+</body>
+
+</html>

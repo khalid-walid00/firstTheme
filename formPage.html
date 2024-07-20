@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body style="overflow-x: hidden;">
+    <!-- header -->
+    <div class="w-full flex justify-center bg-wheate" dir="rtl">
+        <div class="w-9/12 flex justify-between items-center ">
+<!-- icon -->
+<img class="w-16 h-16"  src="/assets/icons/header1.png">
+<!-- icon -->
+         <!-- search -->
+         <div class="flex w-64 px-2 h-10 items-center bg-white rounded-lg">
+            <input type="text" class="flex-1 outline-none" placeholder="ابحث عما تريد">
+            <img class="w-4 h-4" src="/assets/icons/search.png">
+         </div>
+         <!-- search -->
+
+  <!-- links -->
+<div class="flex gap-4 justify-between">
+    <a class=" font-semibold text-base ">الرئيسية</a>
+    <a class=" font-semibold text-base text-gray-500">المنتجات</a>
+    <a class=" font-semibold text-base text-gray-500">قائمة منسدلة</a>
+    <a class=" font-semibold text-base text-gray-500">صفحة</a>
+</div>
+  <!-- links -->
+   <!-- conection us -->
+    <div class="flex justify-between items-center gap-8">
+        <a class=" bg-white px-2 py-1 rounded-lg border-gray border">تواصل معنا</a>
+        <img class="w-8 h-8" src="/assets/icons/basket.header.png">
+       
+    </div>
+   <!-- conection us -->
+
+        </div>
+    </div>
+    <!-- header -->
+
+   <div class=" flex justify-center h-screen mt-10" dir="rtl">
+    <div class="w-9/12 flex justify-between">
+   <!-- form -->
+   <div class="w-7/12">
+       <div class=" font-semibold text-2xl">للطلب برجاء ادخل بياناتك</div>
+       <div class=" flex flex-col mt-4">
+        <label class="mb-2">الاسم باالكامل <span class=" text-red-600">*</span></label>
+        <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="ادخل اسمك">
+       </div>
+       <div class=" flex flex-col mt-4">
+        <label class="mb-2">رقم الهاتف<span class=" text-red-600">*</span></label>
+        <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="ادخل رقم الهاتف">
+       </div>
+       <div class=" flex flex-col mt-4">
+        <label class="mb-2">رقم الهاتف اخر ( اختياري ) <span class=" text-red-600">*</span></label>
+        <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="رقم عليه واتساب مثلاً">
+       </div>
+       <div class=" flex flex-col mt-4">
+        <label class="mb-2">المحافظة<span class=" text-red-600">*</span></label>
+        <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="ادخل المحاظفة">
+       </div>
+       <div class=" flex flex-col mt-4">
+        <label class="mb-2">العنوان بالكامل<span class=" text-red-600">*</span></label>
+        <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="منطقة، شارع، عمارة، شقة">
+       </div>
+       <div class=" flex flex-col mt-4">
+        <label class="mb-2">علامة مميزة<span class=" text-red-600">*</span></label>
+        <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="منطقة، شارع، عمارة، شقة">
+       </div>
+
+       <!-- Delivery -->
+        <div class=" font-bold text-2xl my-4">التوصيل</div>
+        <div class="delivery">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-2 ">
+                    <input type="radio" class="custom-radio">
+                    <span>شحن عادي</span>
+                </div>
+                <div>50 ج.م</div>
+            </div>
+        </div>
+       <!-- Delivery -->
+       <!-- ways to pay -->
+        <div>
+            <div class=" font-bold text-2xl my-4">طريقة الدفع</div>
+            <div class="bg-whiteGray p-4 rounded-lg border">الدفع عند الاستلام</div>
+       </div>
+       <!-- ways to pay -->
+    </div>
+    <!-- form -->
+     <!-- invoce -->
+       <div class="w-4/12">
+       <div class="invoice ">
+        <!-- head -->
+        <div class="flex justify-between">
+            <div class=" text-2xl font-semibold ">ملخص الطلب</div>
+            <div class=" flex items-center">
+                <div class="border-b  flex w-32 border-brown"></div>
+            </div>
+        </div>
+        <!-- head -->
+       <!-- items -->
+        <div class="flex justify-between mt-5">
+          <div class="flex justify-between gap-2">
+            <img class="w-16 h-16 rounded-lg" src="/assets/icons/item.png">
+            <div class="">
+                <div class="font-bold">سترة رجالي بكم طويل</div>
+                <div>
+                    <span class="text-gray-500 text-sm font-semibold">الكمية:</span>
+                    <span class="text-gray-600 text-sm">1</span>
+                </div>
+                <div>
+                    <span class="text-gray-500 text-sm font-semibold">الكمية:</span>
+                    <span class="text-gray-600 text-sm">1</span>
+                </div>
+                <div>
+                    <span class="text-gray-500 text-sm font-semibold">الكمية:</span>
+                    <span class="text-gray-600 text-sm">1</span>
+                </div>
+            </div>
+          </div>
+          <div class="flex items-start font-bold text-2xl">450 ج.م</div>
+        </div>
+       <!-- items -->
+
+       <!-- Discount -->
+      <div class="">
+        <div class=" text-end font-semibold text-sm">كود الخصم</div>
+        <div class="flex w-full gap-4 mt-2">
+            <input class=" flex-1 outline-none  px-2 py-1  rounded-lg border-gray border" placeholder="ادخل كود الخصم">
+            <button class=" w-3/12 bg-white px-2 py-1 rounded-lg border-gray border">تطبيق</button>
+        </div>
+      </div>
+       <!-- Discount -->
+        <!-- calc price -->
+         <div class=" border-t border-b border-brown py-2 mt-2">
+            <div class="flex justify-between mt-3">
+                <div class=" text-brown-holder font-semibold">السعر</div>
+                <div class=" font-semibold text-lg">450 ج.م</div>
+            </div>
+            <div class="flex justify-between mt-3">
+                <div class=" text-brown-holder font-semibold">الشحن</div>
+                <div class=" font-semibold text-lg">450 ج.م</div>
+            </div>
+            <div class="flex justify-between mt-3">
+                <div class=" text-brown-holder font-semibold">كود الخصم</div>
+                <div class=" font-semibold text-lg">0 ج.م</div>
+            </div>
+         </div>
+        <!-- calc price -->
+         <!-- total -->
+         <div class="flex justify-between mt-3">
+            <div class=" text-brown-holder font-semibold">اجمالي المبلغ</div>
+            <div class=" font-semibold text-lg">490 ج.م</div>
+        </div>
+         <!-- total -->
+          <!-- make Order -->
+           <button class="btn-makeorder mt-2">تأكيد الطلب</button>
+          <!-- make Order -->
+       </div>
+      </div>
+     <!-- invoce -->
+
+    </div>
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
